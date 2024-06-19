@@ -1,0 +1,76 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <link rel="icon" href="./image/bookmark.PNG">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/all.min.css">
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+
+</head>
+<body>
+
+<div class="container">
+  <div class="capthion text-center position-relative">
+    <h1 class="position-relative">Bookmarker</h1>
+  </div>
+  <div class="bookmarkerInput py-3">
+    <h2>
+      <i class="fa-solid fa-bookmark start"></i>
+      Bookmark your favorite sites
+      <i class="fa-solid fa-bookmark end"></i>
+    </h2>
+    <div class="Inputs pt-4">
+      <div class="mb-4">
+        <label for="SiteName" class="form-label"> <i class="fa-solid fa-book-bookmark pe-2"></i>Site Name</label>
+        <input oninput="validationName()" type="text" class="form-control" id="SiteName" placeholder="Bookmark Name">
+      </div>
+      <div class="mb-4">
+        <label for="SiteURL" class="form-label"> <i class="fa-solid fa-link pe-2"></i>Site URL</label>
+        <input oninput="validationUrl()" type="text" class="form-control" id="SiteURL" placeholder="Website URL">
+      </div>
+      <div class="text-center" id="send">
+        <button  class="btn" id="btn">Submit</button>
+      </div>
+    </div>
+  </div>
+  <div class="Display py-4">
+    <table class="table text-center">
+      <thead>
+        <th>Index</th>
+        <th>Website Name</th>
+        <th>Visit</th>
+        <th>Delete</th>
+      </thead>
+      <tbody id="myBody"> 
+      <a href="" target="_blank"></a>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+    <script src="./JS/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+body{ 
+        
+        background-color: #f7ecde;
+        font-family: "PT Sans Caption", sans-serif;
+} 
+.capthion{
+    font-family: "Pacifico", cursive;
+        font-style: normal;
+    padding: 4rem 0;
+}
+.capthion h1{
+    font-size: 50px;
+    font-weight: 500;
+}
+.capthion h1::before{
+    content: "";
+    position: absolute;
+    width: 16.5rem;
+    height: 25%;
+    bottom: 10px;
+    background-color: #fec260;
+    transition: height 350ms;
+    z-index: -1;
+}
+.capthion h1:hover::before{
+    height: 50%;
+}
+.bookmarkerInput{
+    border-width: 2px 0 2px 0;
+    border-style: dotted;
+    border-color: #352e28;
+}
+.bookmarkerInput h2{
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    font-size: 25px;
+    background-clip: text;
+    color: transparent;
+    font-family: "Righteous";
+    font-weight: 500;
+    text-align: center;
+}
+.Inputs{
+    font-family: "PT Sans Caption", sans-serif;
+    font-weight: bold;
+}
+.form-control:focus{
+    border-color: #d99c39;
+    box-shadow: 0 0 0 0.25rem #fec26055;
+}
+#send .btn{
+    color: white;
+    background-color: #d1512d;
+    padding: 0.5rem 3rem;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-size: 16px;
+}
+#send .btn:hover{
+    color: white;
+    background-color: #d1512d;
+}
+#myBody .btn-Visit{
+    color: white;
+    background-color: #9eb23b;
+}
